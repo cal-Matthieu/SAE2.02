@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.ControleurEtudiant">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonMenu" mnemonicParsing="false" onAction="#pressedButtonMenu" text="Button" />
+            <Button fx:id="buttonRetour" mnemonicParsing="false" onAction="#pressedButtonRetour" text="Button">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressedEtudiants" text="Etudiants">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressedListeAppariements" text="Liste Appariements">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressedCriteres" text="Critères" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="248.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="262.0" prefWidth="300.0">
+                     <children>
+                        <HBox prefHeight="54.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Name :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelName" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="58.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Forename :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelForename" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="55.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Country :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelCountry" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="59.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Birth date :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelBirthDate" text="Label" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="196.0" prefWidth="301.0">
+                     <children>
+                        <HBox prefHeight="35.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Gender :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelGender" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="41.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Pair Gender :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelPairGender" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Food :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelFood" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="43.0" prefWidth="301.0">
+                           <children>
+                              <Label text="Guest food constraint :">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="labelGuestFoodConstraint" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="301.0">
+                           <children>
+                              <CheckBox fx:id="boxHasAnimal" mnemonicParsing="false" text="Has animal" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="301.0">
+                           <children>
+                              <CheckBox fx:id="boxGuestAnimalAllergy" mnemonicParsing="false" text="Guest animal allergy" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="600.0">
+               <children>
+                  <Label text="Hobbies :">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="labelHobbies" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,13 @@
+{
+	"folders": [],
+	"settings": {
+		"java.project.referencedLibraries": [
+			"/home/public/javafx-sdk-21.0.7/lib/*.jar"
+		],
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.debug.settings.console": "internalConsole"
+	}
+}

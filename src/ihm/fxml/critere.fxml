@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ihm.ControleurCriteres">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="buttonMenu" mnemonicParsing="false" onAction="#pressedButtonMenu" text="Button" />
+            <Button fx:id="buttonRetour" mnemonicParsing="false" onAction="#pressedButtonRetour" text="Button">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressedEtudiants" text="Etudiants">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pressedListeAppariements" text="Liste Appariements">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Critères" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="378.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="93.0" prefWidth="600.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="93.0" prefWidth="300.0">
+                     <children>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0">
+                           <left>
+                              <CheckBox fx:id="checkboxHobbies" mnemonicParsing="false" onAction="#pressedCheckboxHobbies" text="Hobbies" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="40.0" />
+                                 </BorderPane.margin>
+                              </CheckBox>
+                           </left>
+                           <right>
+                              <Spinner fx:id="spinnerHobbies" onMouseClicked="#pressedSpinnerHobbies" prefHeight="26.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="10.0" />
+                                 </BorderPane.margin>
+                              </Spinner>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0">
+                           <left>
+                              <CheckBox fx:id="checkboxGender" mnemonicParsing="false" onAction="#pressedCheckboxGender" text="Gender" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="40.0" />
+                                 </BorderPane.margin>
+                              </CheckBox>
+                           </left>
+                           <right>
+                              <Spinner fx:id="spinnerGender" onMouseClicked="#pressedSpinnerGender" prefHeight="26.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="10.0" />
+                                 </BorderPane.margin>
+                              </Spinner>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0">
+                           <left>
+                              <CheckBox fx:id="checkboxBirthDate" mnemonicParsing="false" onAction="#pressedCheckboxBirthDate" text="Birth Date" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="40.0" />
+                                 </BorderPane.margin>
+                              </CheckBox>
+                           </left>
+                           <right>
+                              <Spinner fx:id="spinnerBirthDate" onMouseClicked="#pressedSpinnerBirthDate" prefHeight="26.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="10.0" />
+                                 </BorderPane.margin>
+                              </Spinner>
+                           </right>
+                        </BorderPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="93.0" prefWidth="300.0">
+                     <children>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0">
+                           <left>
+                              <CheckBox fx:id="checkboxAnimalAllergy" mnemonicParsing="false" onAction="#pressedCheckboxAnimalAllergy" text="Animal Allergy" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="40.0" />
+                                 </BorderPane.margin>
+                              </CheckBox>
+                           </left>
+                           <right>
+                              <Spinner fx:id="spinnerAnimalAllergy" onMouseClicked="#pressedSpinnerAnimalAllergy" prefHeight="26.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="10.0" />
+                                 </BorderPane.margin>
+                              </Spinner>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0">
+                           <left>
+                              <CheckBox fx:id="checkboxFood" mnemonicParsing="false" onAction="#pressedCheckboxFood" text="Food" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets left="40.0" />
+                                 </BorderPane.margin>
+                              </CheckBox>
+                           </left>
+                           <right>
+                              <Spinner fx:id="spinnerFood" onMouseClicked="#pressedSpinnerFood" prefHeight="26.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <BorderPane.margin>
+                                    <Insets right="10.0" />
+                                 </BorderPane.margin>
+                              </Spinner>
+                           </right>
+                        </BorderPane>
+                        <BorderPane prefHeight="30.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="247.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="194.0" prefWidth="300.0">
+                     <children>
+                        <HBox prefHeight="25.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Fixer appariements">
+                                 <HBox.margin>
+                                    <Insets left="20.0" right="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#pressedFixerAjouter" text="Ajouter">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pressedFixerSupprimer" text="Supprimer" />
+                           </children>
+                        </HBox>
+                        <ListView fx:id="listViewFixer" prefHeight="237.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="194.0" prefWidth="300.0">
+                     <children>
+                        <HBox prefHeight="25.0" prefWidth="300.0">
+                           <children>
+                              <Label text="Eviter appariements">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#pressedEviterAjouter" text="Ajouter">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pressedEviterSupprimer" text="Supprimer" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ListView fx:id="listViewEviter" prefHeight="248.0" prefWidth="300.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

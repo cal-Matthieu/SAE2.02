@@ -1,0 +1,16 @@
+Prenom;Nom;DateNaissance;Pays;Gender;PairGender;GuestAnimalAllergy;HostHasAnimal;GuestFood;HostFood;History;Hobbies
+Matthieu;A;2006-05-02;France;true;true;false;false;text;text;lalala;sport,poney
+Mathéo;Lelong;2007-01-01;France;true;false;false;false;text;text;histoire;sport
+Lucie;Martin;2005-08-15;France;false;true;true;false;text;text;danse;dance
+Carlos;Gomez;2006-03-23;Italie;true;false;false;true;text;text;musique;leer,chanter
+Aya;Tanaka;2007-12-12;Italie;false;true;true;true;text;text;dessin;leer
+Noah;K;2007-02-18;France;true;true;false;false;not;not;not;skateboard,musique,cinéma
+Jade;L;2006-10-03;Italie;false;false;true;false;végétarien,glutenfree;végétarien;not;lecture,danse,équitation
+Hugo;M;2005-07-29;France;true;false;false;true;lactosefree;not;not;jeux vidéo,rugby,cinéma
+Clara;N;2006-12-11;Italie;false;true;false;false;nonuts,végétalien;nonuts,végétarien;not;dessin,lecture,musique
+Léo;O;2007-05-22;France;true;true;false;false;not;halal;not;football,jeux vidéo,cuisine
+Mia;P;2006-06-30;Italie;false;false;true;true;glutenfree;glutenfree;not;théâtre,yoga,dessin
+Arthur;Q;2005-03-17;France;true;false;false;false;not;not;not;natation,coding,guitare
+Zoé;R;2007-08-05;Italie;false;true;true;false;lactosefree,végétarien;végétarien;not;lecture,danse,musique
+Louis;S;2006-04-09;France;true;true;false;true;not;nonuts;not;escalade,cinéma,vélo
+Camille;T;2005-11-19;Italie;false;false;false;false;nonuts;lactosefree,végétalien;not;chant,piano,lecture
