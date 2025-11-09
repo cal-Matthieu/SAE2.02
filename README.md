@@ -64,6 +64,4 @@ Le diagramme UML (fichier UML.pdf fourni) illustre les relations entre les class
 Ce projet représente une bonne mise en pratique des concepts fondamentaux de la programmation orientée objet et de la gestion d’un projet logiciel en équipe.  
 Il combine conception UML, développement Java et gestion d’erreurs pour construire une application fonctionnelle et modulable.
 
----
 
-N’hésitez pas à me demander d’autres sections spécifiques à inclure ou d’aide pour l’organisation du projet.
